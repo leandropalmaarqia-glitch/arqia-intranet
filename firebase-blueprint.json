@@ -1,0 +1,23 @@
+{
+  "entities": {
+    "Device": {
+      "title": "Device",
+      "description": "A communication device (SIM/IMEI).",
+      "type": "object",
+      "properties": {
+        "iccid": { "type": "string" },
+        "imei": { "type": "string" },
+        "cliente": { "type": "string" },
+        "cotacao": { "type": "string" },
+        "simcard": { "type": "string" }
+      },
+      "required": ["iccid", "imei", "cliente", "simcard"]
+    }
+  },
+  "firestore": {
+    "/devices/{deviceId}": {
+      "schema": "Device",
+      "description": "Collection for imported devices."
+    }
+  }
+}

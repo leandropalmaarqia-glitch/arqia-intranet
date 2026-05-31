@@ -1,0 +1,6 @@
+{
+  "name": "Intranet Device",
+  "description": "A modern inventory management system for tracking IMEIs, SimCards, quotes, and products.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
